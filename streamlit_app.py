@@ -16,15 +16,23 @@ import re
 import warnings
 warnings.filterwarnings('ignore')
 
-# Download NLTK data if needed
+# Download NLTK data
 @st.cache_data
 def download_nltk_data():
     try:
         nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt', quiet=True)
+    
+    try:
+        nltk.data.find('tokenizers/punkt_tab')
+    except LookupError:
+        nltk.download('punkt_tab', quiet=True)
+    
+    try:
         nltk.data.find('corpora/stopwords')
     except LookupError:
-        nltk.download('punkt')
-        nltk.download('stopwords')
+        nltk.download('stopwords', quiet=True)
 
 # Load the trained model and vectorizer
 @st.cache_resource
