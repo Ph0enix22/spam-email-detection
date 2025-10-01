@@ -26,7 +26,7 @@ A machine learning project that implements an automated spam email detection sys
 
 ## 🌐 Live Demo
 
-**🚀 Try the live web app:** [Spam Detector App](STREAMLIT-URL-HERE)
+**🚀 Try the live web app:** [Spam Detector App](https://spam-email-detection-demo.streamlit.app)
 
 ## 🚀 Quick Start
 
@@ -159,17 +159,27 @@ Spam       1      8     (89% precision)
 
 ## 🚀 Deployment
 
-This project can be deployed on **Streamlit Community Cloud** for free:
+This project is **currently deployed** and live at: [Spam Detector App](https://spam-email-detection-demo.streamlit.app)
 
-1. Push your code to GitHub (already done!)
+### Want to Deploy Your Own Version?
+
+You can easily deploy this on **Streamlit Community Cloud** for free:
+
+1. Fork this repository to your GitHub account
 2. Visit [share.streamlit.io](https://share.streamlit.io)
 3. Sign in with GitHub
-4. Click "New app" and select this repository
+4. Click "New app" and select your forked repository
 5. Choose `streamlit_app.py` as the main file
 6. Click Deploy!
 
-Your app will be live in minutes at a public URL you can share.
+Your app will be live in minutes at a public URL you can share with anyone.
 
+### Alternative Deployment Options
+- **Railway.app** - Free tier with private repo support
+- **Render** - Free tier available
+- **Heroku** - Platform-as-a-Service option
+- **Local** - Run on your own computer with `streamlit run streamlit_app.py`
+ 
 ## 🧰 Technologies Used
 
 - **Python 3.8+** - Core programming language
